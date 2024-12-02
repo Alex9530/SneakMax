@@ -1,0 +1,69 @@
+@import "./adaptive.scss";
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+
+  @include respond-to(custom1220) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.container {
+  @include respond-to(custom780to100) {
+    width: 90%;
+  }
+}
+
+.container {
+  @include respond-to(custom550) {
+    padding: 0px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  min-height: calc(100vh - 120px);
+}
+
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.btn {
+  background-color: $buttom-primary-color;
+  color: white;
+  border: none;
+  font: $middle-font-sm;
+  border-radius: 4px;
+}

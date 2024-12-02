@@ -1,0 +1,132 @@
+@import "../../adaptive.scss";
+@import "../../variables.scss";
+
+.list-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  position: relative;
+
+  @include respond-to(custom750) {
+    .list-team {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @include respond-to(custom600) {
+    .list-team {
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+}
+
+.team-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.list-team > img {
+  border-radius: 5px;
+}
+
+.list-team {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  position: relative;
+
+  @include respond-to(mobile) {
+    align-items: center;
+  }
+}
+
+.team-name {
+  font-family: $third-family;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: $default-white-color;
+}
+
+.team-role {
+  font-family: $font-family;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: $default-white-color;
+}
+
+.team-heading {
+  font-family: $third-family;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  color: $default-white-color;
+
+  @include respond-to(mobile) {
+    text-align: center;
+  }
+}
+
+.team-figure {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+.container-team {
+  z-index: 2;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  gap: 10px;
+}
+.swiper_button_left,
+.swiper_button_right {
+  cursor: pointer;
+  font-family: $second-family;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgb(255, 244, 238);
+}
+.swiper_button_left:hover,
+.swiper_button_right:hover {
+  background-color: rgb(229, 169, 137);
+}
+.mySwiper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.swiper-container-off {
+  @include respond-to(custom1110) {
+    display: none;
+  }
+}
+.swiper-container,
+.button-container {
+  display: none;
+  @include respond-to(custom1110) {
+    display: flex;
+  }
+}

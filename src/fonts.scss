@@ -1,0 +1,25 @@
+$font-path: "./fonts/";
+
+@font-face {
+  font-family: "Intro Book";
+  src: url(#{$font-path}IntroBook.woff2) format("woff2"),
+    url(#{$font-path}intro-book.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Intro Regular";
+  src: url(#{$font-path}IntroRegular.woff2) format("woff2"),
+    url(#{$font-path}intro-regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Intro Bold";
+  src: url(#{$font-path}IntroBold.woff2) format("woff2"),
+    url(#{$font-path}intro-bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
