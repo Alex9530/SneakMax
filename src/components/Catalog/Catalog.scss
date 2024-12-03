@@ -129,6 +129,7 @@
 
 .catalog-block {
   display: flex;
+
   align-items: flex-start;
   @include respond-to(mobile) {
     flex-direction: column;
@@ -147,6 +148,7 @@
 }
 
 .catalog-left-block {
+  max-width: 280px;
   background-color: rgba(255, 244, 238, 1);
   border-radius: 4px;
   margin-right: 20px;

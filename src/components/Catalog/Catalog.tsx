@@ -82,7 +82,7 @@ export default function Catalog() {
           priceRange={priceRange}
         />
         {sneakers.loading && sneakers.data.length === 0 ? (
-          <p>...loading</p>
+          <p>Нет товара</p>
         ) : (
           <SneakerList
             sneakers={sneakers.data}
